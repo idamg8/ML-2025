@@ -101,3 +101,28 @@ Reti neurali nativamente estendibili a problemi multiclasse -> output layer con 
 
 ![[Pasted image 20250621174509.png]]
 
+Importante: decidere prima dell'addestramento quale label usare per ogni classe (es. pedestrian = [1 0 0 0])
+
+## Softmax Layer
+Vogliamo neuroni dell'output layer coordinati tra loro -> restituiscono informazioni di probabilità sulla classe di appartenenza dell'input: somma delle probabilità di ogni classe = 1 (100%)
+
+Nel layer finale non c'è una funzione di attivazione collegata a ogni neurone, ma i risultati di ogni neurone del layer vengono combinati:
+$$z^{[i]}=W^{[i]}a^{[i-1]}+b^{[i]}$$
+	con $a^{[i-1]}$ risultati del layer precedente moltiplicati per i pesi $W^{[i]}$
+$$Softmax:a^{[i]}=\frac{e^{z^{[i]}}}{\sum_{J=1}^Ne_{J}^{z^{[i]}}}$$
+### Esempio
+![[07 - Neural Networks 2025-06-21 18.39.41.excalidraw]]
+
+## Cross-Entropy Loss
+$$L(W,b)=-\sum_{i=1}^my^{(i)}\log\left(h_{W,b}(x^{(i)})\right)$$
+![[Pasted image 20250621185045.png|250]]
+> simile alla Binary Cross-Entropy Loss vista sopra, ma si concentra *solo sulla classe positiva* (le negative sono potenzialmente infinite)
+
+### Esempio
+![[Pasted image 20250621184637.png|400]]
+> le classi negative sono poste a 0 nel ground truth $y$ -> nel prodotto si eliminano le classi negative, rimane solo quella positiva
+
+Errore calcolato solo sulla classe positiva, vogliamo che sia più vicino possibile a 0 -> far salire la probabilità della classe positiva significa far scendere le probabilità delle classi negative (siccome la somma deve essere sempre = 1) 
+
+
+
