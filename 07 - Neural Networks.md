@@ -19,3 +19,29 @@ Sigmoide:
 - output 1 se argomento della funzione g(z) è alto
 - output 0 se argomento della funzione g(z) è basso (0 o inferiore)
 -> mima funzionamento neuroni: si attivano e inviano impulso solo se a loro arriva forte impulso
+
+Rete neurale in forma più basilare = Logistic Regression
+MA: nelle reti neurali la *funzione di attivazione* può cambiare (non necessariamente sigmoid)
+
+Inizialmente parametri scelti casualmente, poi migliorati con GD
+
+Per casi più complessi di classificazione si possono *effettuare più logistic regression*, ognuna associata ad un neurone e con i suoi parametri (pesi degli archi, bias associato al neurone)
+
+![[Screenshot 2025-06-21 alle 15.31.06.png|500]]
+> in questo caso i due neuroni neri effettuano logistic regression, neurone finale arancione mette insieme i risultati -> vengono creati decision boundary definiti da 2+ rette o piani
+
+**Obiettivo:** usare reti più piccole possibili 
+
+Aumentando profondità della rete (aggiungendo livelli di neuroni), essa migliora sempre di più la creazione di decision boundary 
+![[Pasted image 20250621154742.png|500]]
+
+>-> ridurre mano a mano dimensionalità sui vari layer man mano che scendo in profondità: primi livelli vicini a input layer con molti neuroni, andando verso output layer sempre meno neuroni
+![[Screenshot 2025-06-21 alle 15.42.44.png|300]]
+
+**Rete collegata (densa):** tutti i neuroni sono collegati a tutti i successivi
+
+>Dato un problema, che rete neurale utilizzare? Problema ancora non risolto -> cercare problemi simili usati da altri, modificare opportunamente
+
+- Rete neurale senza funzione di attivazione, anche se complessa, si comporta come rete neurale a un solo neurone.
+- Anche se stessa architettura di due reti neurali, con *pesi diversi potrebbero risolvere problemi completamente diversi* -> stesso problema con architetture diverse richiede pesi diversi
+
