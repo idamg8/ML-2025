@@ -27,7 +27,7 @@ Calcolare distribuzioni gaussiane (definite da media e varianza) per ognuna dell
 **Algoritmo:**
 1. scegliere $n$ feature $x_{i}$ indicative di esempi anomali
 2. calcolare medie $\mu_{1},\dots,\mu_{n}$ e deviazioni standard $\sigma_{1},\dots,\sigma_{n}$ per ogni feature $$\mu_{j}=\frac{1}{m}\sum_{i=1}^m x_{j}^{(i)} \quad\quad \sigma_{j}^2=\frac{1}{m}\sum_{i=1}^m(x_{j}^{(i)}-\mu_{j})^2$$
-3. dato nuovo esempio $x$ calcolare $p(x)$ $$p(x)=\prod_{j=1}^np(x_{j};\mu_{j};\sigma_{j}^2)=\prod_{j=1}^n\frac{1}{\sqrt{ 2\pi \sigma_{j} }}\exp\left( -\frac{(x_{j}-\mu_{j})^2}{2\sigma_{j}^2} \right)$$
+3. dato nuovo esempio $x$ calcolare $p(x)$ $$p(x)=\prod_{j=1}^np(x_{j};\mu_{j};\sigma_{j}^2)=\prod_{j=1}^n\frac{1}{\sqrt{ 2\pi} \sigma_{j} }\exp\left( -\frac{(x_{j}-\mu_{j})^2}{2\sigma_{j}^2} \right)$$
 4. anomalia se $p(x)<\varepsilon$ valore di soglia
 
 ### Esempio

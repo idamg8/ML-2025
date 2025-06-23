@@ -16,7 +16,7 @@ $h_{\theta}(x)=g(\theta^Tx)>0.5\to \theta^Tx>0$
 
 Quindi il decision boundary (retta) è: $h_{\theta}(x)=0.5\to \theta^Tx=0\to-3+x_{1}+2x_{2}=0$, rappresentabile in forma matriciale come:
 $\begin{bmatrix} 1 &2\end{bmatrix} \begin{bmatrix} x_{1} \\ x_{2}\end{bmatrix} -3=0$
-  $w^T$    $x$       $b$    -> equazione generica *iperpiano*
+  $w^T$    $x$     +  $b$    -> equazione generica *iperpiano*
 
 Margine: due rette parallele al decision boundary, una sopra e una sotto
 - $w^Tx+b=0$ decision boundary

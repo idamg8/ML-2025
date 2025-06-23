@@ -109,7 +109,7 @@ Vogliamo neuroni dell'output layer coordinati tra loro -> restituiscono informaz
 Nel layer finale non c'è una funzione di attivazione collegata a ogni neurone, ma i risultati di ogni neurone del layer vengono combinati:
 $$z^{[i]}=W^{[i]}a^{[i-1]}+b^{[i]}$$
 	con $a^{[i-1]}$ risultati del layer precedente moltiplicati per i pesi $W^{[i]}$
-$$Softmax:a^{[i]}=\frac{e^{z^{[i]}}}{\sum_{J=1}^Ne_{J}^{z^{[i]}}}$$
+$$Softmax:a^{[i]}=\frac{e^{z^{[i]}}}{\sum_{J=1}^Ne^{z_{J}^{[i]}}}$$
 ### Esempio
 ![[07 - Neural Networks 2025-06-21 18.39.41.excalidraw]]
 
