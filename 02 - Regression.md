@@ -177,11 +177,11 @@ Con elevamento a potenza le feature possono muoversi in range troppo diversi-> i
 
 ## Coefficiente di correlazione di Pearson
 Si ottiene tramite formula che mette in relazione due feature (vettori)
-$$\rho=\frac{1}{N-1}\sum_{i=1}^N(\frac{X_{i}-\mu_{X}}{\sigma_{X}})(\frac{Y_{i}-\mu_{Y}}{\sigma_{Y}})$$
-Coefficiente sta in $[-1,1]$ -> se dati stanno su una retta (indipendente dall'inclinazione) coefficiente = 1: correlazione lineare
+$$\rho=\frac{1}{N-1}\sum_{i=1}^N\left(\frac{X_{i}-\mu_{X}}{\sigma_{X}}\right)\left(\frac{Y_{i}-\mu_{Y}}{\sigma_{Y}}\right)$$
+Coefficiente sta in $[-1,1]$ -> se dati stanno su una retta (indipendentemente dall'inclinazione) coefficiente = 1: correlazione lineare
 Con sistemi più complessi (es. reti neurali) sono utili anche feature con contributo non lineare
 
--> cerca di capire se due feature sono correlate: spesso usate per mettere a confronto feature e target -> capire quali feature sono più correlate all'output (scegliere per un problema di tenere solo le feature più correlate)
+-> cerca di capire se due feature sono correlate: spesso usato per mettere a confronto feature e target -> capire quali feature sono più correlate all'output (scegliere per un problema di tenere solo le feature più correlate)
 
 >**N.B:** con più feature è necessario avere molti più esempi di training (non basta aggiungerne uno per ogni feature aggiuntiva; fattore circa x10) -> scegliere feature più correlate utile per avere meno esempi di training 
 
