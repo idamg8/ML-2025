@@ -80,7 +80,7 @@ $$\text{repeat until convergence}\space\{\theta_{j}:=\theta_{j}-\alpha\frac{\par
 > Nuovo parametro = vecchio parametro - derivata funzione di costo rispetto al parametro
 
 Dimensione del "passo" -> parametro $\alpha≥0$ spesso adattivo nel tempo (se fosse sempre troppo grande rischio di saltare il punto di minimo)
--> $aplha=0$ rimango con parametro identico (annullo la sottrazione della derivata)
+-> $\alpha=0$ rimango con parametro identico (annullo la sottrazione della derivata)
 
 ![[Pasted image 20250617151859.png|500]]
 
@@ -94,7 +94,7 @@ Dimensione del "passo" -> parametro $\alpha≥0$ spesso adattivo nel tempo (se f
 Calcolare funzione di costo a ogni riapplicazione di GD, e plottare risultati
 -> vogliamo grafico con andamento decrescente (funzione di costo deve essere sempre minore a ogni iterazione)
 
-**Problema**: funzione di costo potrebbe non scendere a ogni iterazione, potrebbe non convergere -> può essere causato da $aplha$ troppo grande 
+**Problema**: funzione di costo potrebbe non scendere a ogni iterazione, potrebbe non convergere -> può essere causato da $\alpha$ troppo grande 
 -> anche $\alpha$ troppo piccolo è problematico (convergenza troppo lenta)
 
 ![[Pasted image 20250617154447.png|600]]
@@ -135,7 +135,7 @@ Feature hanno diversi ordini di grandezza (es. metri quadri, numero camere/piani
 
 Se feature molto diverse: coefficienti molto diversi fra loro -> funzione di costo potrebbe assumere conformazione molto "allungata" per alcuni parametri
 
-Normalizzare: far sì che le feature si muovano all'incirca nello stesso range, si ottiene miglior performance -> tutte le feature divise per un *fattore di normalizzazione*, stanno tra 0 e 1
+Normalizzare: far sì che le feature si muovano all'incirca nello stesso range, si ottiene miglior performance -> tutte le feature divise per un *fattore di normalizzazione*
 
 ![[Pasted image 20250617161534.png|500]]
 ### Mean Normalization
