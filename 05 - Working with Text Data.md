@@ -33,7 +33,7 @@ Testo viene processato prima di essere dato in input a un modello di IA (talvolt
 ## TF-IDF
 Pesa in modo diverso contenuto informativo delle parole (versione avanzata di BoW)
 Term-Frequency -> BoW: considera solo la frequenza delle parole
-IDF -> parole molto frequenti devono avere impatto più basso (informazioni semantiche potrebbero essere meno spiccate, es: "is")
+IDF (Inverse Document Frequency) -> parole molto frequenti devono avere impatto più basso (informazioni semantiche potrebbero essere meno spiccate, es: "is")
 
 $$tfidf(w,d)=tf\times\left(\ln\left(\frac{N+1}{N_{w}+1}\right)+1\right)$$
 **Notazione:**
@@ -49,7 +49,7 @@ $\ln\left(\frac{100+1}{100+1}\right)=\ln(1)=0$
 
 ### Normalizzazione L-2
 Nel pacchetto Scikit-learn TF-IDF include normalizzazione L-2:
-$$v_{\text{norm}}=\frac{v}{||v^2||}=\frac{v}{\sqrt{ v_{1}^2+v_{2}^2+\dots+v_{n}^2 }}$$
+$$v_{\text{norm}}=\frac{v}{||v||_{2}}=\frac{v}{\sqrt{ v_{1}^2+v_{2}^2+\dots+v_{n}^2 }}$$
 > **N.B:** dividere ogni componente di v per la norma
 
 ## Limitazioni

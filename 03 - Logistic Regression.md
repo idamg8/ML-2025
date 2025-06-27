@@ -29,7 +29,7 @@ Usando algoritmo di Linear Regression possiamo ottenere i parametri $\theta$; co
 $h_{\theta}(x)=g(\theta_{0}+ \theta_{1}x_{1}+\theta_{2}x_{2})$ con $\theta=[\theta_{0},\theta_{1},\theta_{2}]^T,x=[1,x_{1},x_{2}]^T$
 LR -> $\theta=[-3,1,2]$
 $h_{\theta}(x)=0.5\to \theta^Tx=0\to-3+x_{1}+2x_{2}=0$ -> possiamo disegnare la **retta decisionale**: $x_{1}=3-2x_{2}$
-Punti sopra la retta: valore > 0.5 -> classe 1; punti sopra la retta: valore < 0.5 -> classe 0 
+Punti sopra la retta: valore > 0.5 -> classe 1; punti sotto la retta: valore < 0.5 -> classe 0 
 ![[Pasted image 20250618152456.png|300]]
 ***
 
