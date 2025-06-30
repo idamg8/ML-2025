@@ -68,7 +68,7 @@ Come scegliere numero di dimensioni del nuovo spazio?
 > - 20 feature -> 1500/200 esempi
 > 
 
-**Importante:** se trining set spostato a diversa dimensionalità, ricordarsi di ridimensionare anche validation/test set per evitare problemi di dimensionalità (con la stessa matrice $U_{reduce}$ calcolata in precedenza, NON ricalcolarla)
+**Importante:** se training set spostato a diversa dimensionalità, ricordarsi di ridimensionare anche validation/test set per evitare problemi di dimensionalità (con la stessa matrice $U_{reduce}$ calcolata in precedenza, NON ricalcolarla)
 
 ***
 
