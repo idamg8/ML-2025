@@ -43,7 +43,7 @@ I due boundary sono paralleli:
 ### Trovare $\lambda$
 ![[08 - Support Vector Machines 2025-06-22 11.23.53.excalidraw|300]]
 
-Quindi la distanza tra $x_{1}$ e $x_{2}$ è: 
+Quindi la distanza tra $x_{1}$ e $x_{2}$ (ovvero l'ampiezza del margine) è: 
 $$\lambda||w||=\frac{2}{||w||^2}||w||=\frac{2}{||w||}=\frac{2}{\sqrt{ w^Tw}}$$
 
 > **Obiettivo:** massimizzare il margine $\frac{2}{\sqrt{ w^Tw }}$ -> equivale a *minimizzare* $\frac{\sqrt{ w^Tw }}{2}$ -> equivale a trovare il minimo di $\frac{w^Tw}{2}$

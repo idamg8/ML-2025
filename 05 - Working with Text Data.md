@@ -13,7 +13,7 @@ Testo viene processato prima di essere dato in input a un modello di IA (talvolt
 **Stop words:** parole di uso molto comune per rendere più comprensibile il testo (es: and, is, at, a, has...) ma hanno basso valore semantico (usate in tutti i contesti, non danno indicazioni semantiche, come invece per es: parlamento / fuorigioco -> forti indicazioni semantiche)
 -> possono essere tolte
 
-**Punteggiatura:** inizialmente ignorata, ultimamente di interesse perché possono avere importanza semantica
+**Punteggiatura:** inizialmente ignorata, ultimamente di interesse perché può avere importanza semantica (es. ? utile a distinguere domande da affermazioni)
 
 **Regular expressions:** cercare nel testo elementi per capire se estrarli o rimuoverli (es: per sostituire tag HTML con singolo carattere per semplificare, oppure rimuoverli)
 
@@ -38,7 +38,7 @@ IDF (Inverse Document Frequency) -> parole molto frequenti devono avere impatto 
 $$tfidf(w,d)=tf\times\left(\ln\left(\frac{N+1}{N_{w}+1}\right)+1\right)$$
 **Notazione:**
 - $N$ = numero documenti nel training set
-- $N_{w}$ = numero documenti in cui appare parola $w$ (non ha forte valore discriminativo)
+- $N_{w}$ = numero documenti in cui appare parola $w$ (se $N_{w}$ alto, $w$ non ha forte valore discriminativo)
 - $tf$ = numero di volte che $w$ appare nel documento $d$
 
 ### Esempio

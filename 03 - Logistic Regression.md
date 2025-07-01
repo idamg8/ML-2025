@@ -23,7 +23,7 @@ Discriminare tra classe 0/1 -> *valore di discriminazione (soglia decisionale) a
 
 **IMPORTANTE:** $z > 0: g(z) > 0.5$ e viceversa -> $g(\theta^Tx)>0.5$ quando $\theta^Tx>0$
 
-Usando algoritmo di Linear Regression possiamo ottenere i parametri $\theta$; con $\theta^Tx=0$ otteniamo $h_{\theta}(x)=0.5$
+Usando algoritmo di Logistic Regression possiamo ottenere i parametri $\theta$; con $\theta^Tx=0$ otteniamo $h_{\theta}(x)=0.5$
 
 ### Esempio
 $h_{\theta}(x)=g(\theta_{0}+ \theta_{1}x_{1}+\theta_{2}x_{2})$ con $\theta=[\theta_{0},\theta_{1},\theta_{2}]^T,x=[1,x_{1},x_{2}]^T$

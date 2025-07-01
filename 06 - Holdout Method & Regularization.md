@@ -74,7 +74,7 @@ $$J_{vs}(\theta)=\frac{1}{m_{vs}}\left[\sum_{i=1}^{m_{vs}}Cost(h_{\theta}(x,y))\
 
 Curva verde:
 - pochi dati training: possono esserci problemi di riconoscimento in validation
-- molto dati training: diminuisce errore in validation
+- molti dati training: diminuisce errore in validation
 
 Curva blu:
 formula di costo calcolata in base a esempi di training -> se sistema ha pochi dati, avrà alta performance ed errore di predizione bassissimo; aggiungendo dati aumenta errore (aumenta variabilità del dataset)
@@ -92,9 +92,9 @@ Forte gap tra errore in training e validation
 -> errore in validation sta diminuendo, aumentando esempi di training performance in validation potrebbe migliorare e scendere sotto soglia rossa
 
 ## Possibili soluzioni
-- + esempi di training -> risolve high variance 
-- - feature -> risolve high variance
-- + feature -> risolve high bias
+- $+$ esempi di training -> risolve high variance 
+- $-$ feature -> risolve high variance
+- $+$ feature -> risolve high bias
 - diminuire $\lambda$ -> risolve high bias (viene dato più "potere" ai parametri delle feature)
 - aumentare $\lambda$ -> risolve high variance (parametri troppo influenti fanno specializzare eccessivamente modello su alcune feature -> aumentare $\lambda$ diminuisce influenza parametri)
 

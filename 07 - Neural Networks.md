@@ -67,7 +67,7 @@ Aumentando profondità della rete (aggiungendo livelli di neuroni), essa miglior
 ## Funzioni di attivazione
 - Sigmoide: importanza storica e per Logistic Regression, ma ora poco usata 
 
-- **Rectified Linear Unit (ReLu):** usata per *layer intermedi*; se valore < 0 valore restituisce 0 (neurone non si attiva), se impulso > 0 restituisce valore dell'impulso in entrata
+- **Rectified Linear Unit (ReLu):** usata per *layer intermedi*; se valore < 0 restituisce 0 (neurone non si attiva), se impulso > 0 restituisce valore dell'impulso in entrata
   es. R(-10) = 0 | R(-5) = 0 | R(5) = 5 | R(7) = 7
 ![[07 - Neural Networks 2025-06-21 17.23.36.excalidraw|400]]
 	-> **Problema:** non derivabile in 0, ma valore esattamente 0 molto improbabile, quindi usata ugualmente

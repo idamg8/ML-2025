@@ -11,7 +11,7 @@ Per fare training: fornisco al modello esempi di training come coppia input, des
 - x = variabili di input/feature
 - y = target/output value
 - (x,y) = coppia (input, desiderato), esempio di training
-  -> $(x^{(i)},y^{(i)})$: i-esimo esempio di training; i = 1, ...
+  -> $(x^{(i)},y^{(i)})$: i-esimo esempio di training; i = 1, ..., m
 
 ![[Pasted image 20250617115650.png|500]]
 

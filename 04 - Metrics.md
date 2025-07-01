@@ -11,7 +11,7 @@ Sistema molto buono quando la diagonale principale contiene la maggior parte deg
 
 Matrice sopra si adatta a problema binario, possono essere adattate a problemi multiclasse
 ![[04 - Metrics 2025-06-18 17.01.07.excalidraw|250]]
--> classificatore a 3 classi tende a confondersi tra classe 1 e 3; classe 2 identificata perfettamente 
+-> questo classificatore a 3 classi tende a confondersi tra classe 1 e 3; classe 2 identificata perfettamente 
 (es: andare in bicicletta - correre - camminare -> più difficile distinguere correre e camminare)
 
 ***
@@ -27,12 +27,13 @@ $$\text{Accuracy}=\frac{TP+TN}{FP+FN+TP+TN}$$
 ![[04 - Metrics 2025-06-18 16.38.53.excalidraw|250]]
 Accuratezza: $\frac{990+0}{10+0+0+990}=\frac{990}{1000}=0.99$
 Ma il sistema non funziona bene: predice sempre positivo, accuratezza esce alta solo perché ci sono effettivamente più elementi della classe positiva che negativa -> risultato falsato
-(Se ci fossero più elementi della classe negativa, la precisione diminuirebbe)
+(Se ci fossero più elementi della classe negativa, l'accuratezza diminuirebbe)
 
 ***
 ![[Pasted image 20250618164708.png|400]]
 ## Precision
 Quante volte il sistema predice Positivo in modo corretto (quanti sono TP tra tutti gli esempi classificati Positivi)
+*"Quante volte il sistema alza la mano correttamente"*
 $$P=\frac{TP}{TP+FP}$$
 Nell'esempio: $P=\frac{5}{8}$
 
